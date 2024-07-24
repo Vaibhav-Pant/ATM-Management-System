@@ -125,9 +125,33 @@ An ATM Management System implemented in Java with a graphical user interface usi
 
 ## 🖼 Screenshots
 
-| Log In Page | Sign Up Page 1 | Sign Up Page 2 | Sign Up Page 3 | Card Number and Pin |  ATM Dashboard | Mini Statement |
-|--------------|---------------|---------------------|
-| ![Log In Page](Outputs/Capture1.png) | ![Sign Up Form](Outputs/Capture2.png) | ![Sign Up Form](Outputs/Capture3.png) | ![Sign Up Form](Outputs/Capture4.png) | ![Pin number](Outputs/pin.png) | ![ATM Dashboard](Outputs/atm.png) | ![Mini Statement](Outputs/statement.png) |
+| Log In Page |
+
+![Capture1](https://github.com/user-attachments/assets/ea9b2326-e44e-4405-83e8-220641efecab)
+
+| Sign Up Page 1 | 
+
+![Capture2](https://github.com/user-attachments/assets/eeeec16b-5f60-4369-ba5e-6f2745a5cfe7)
+
+| Sign Up Page 2 | 
+
+![Capture3](https://github.com/user-attachments/assets/03a70739-1ea6-4b67-a280-98f597834f37)
+
+| Sign Up Page 3 | 
+
+![Capture4](https://github.com/user-attachments/assets/09283738-8aca-4519-a93a-2def108f67d7)
+
+| Card Number and Pin |  
+
+![pin](https://github.com/user-attachments/assets/42229044-5f61-41b8-b053-ca0c0f1506f0)
+
+| ATM Dashboard |
+
+![atm](https://github.com/user-attachments/assets/23389895-7e8f-42cf-9a7b-e1b40e301cb2)
+
+| Mini Statement |
+
+![statement](https://github.com/user-attachments/assets/8b773e4c-bb89-4a56-8f36-a1a04aa45566)
 
 ## 🛠 Technology Stack
 
