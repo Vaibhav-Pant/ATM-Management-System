@@ -82,7 +82,7 @@ class SignUp3 extends JFrame implements ActionListener {
         dummypinNum.setFont(new Font("Calibri", Font.BOLD, 18));
         add(dummypinNum);
 
-        JLabel digitPinNum = new JLabel("Your 16 digit Card Number");
+        JLabel digitPinNum = new JLabel("Your 4 digit Pin Number");
         digitPinNum.setBounds(60, 270, 200, 30);
         digitPinNum.setFont(new Font("Calibri", Font.ROMAN_BASELINE, 10));
         add(digitPinNum);
