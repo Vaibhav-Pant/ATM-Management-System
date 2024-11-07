@@ -11,8 +11,7 @@ state varchar(20), pincode varchar(20));
 -- show tables;
 
 
-create table signuptwo(formno varchar(20), religion varchar(20), category varchar(20), income varchar(20),
-gender varchar(20), qualification varchar(40), occupation varchar(20), pan_number varchar(40), aadhar_number varchar(20), 
+create table signuptwo(formno varchar(20), religion varchar(20), category varchar(20), income varchar(20), qualification varchar(40), occupation varchar(20), pan_number varchar(40), aadhar_number varchar(20), 
 senior_citizen varchar(20), existing_account varchar(20));
 
 create table signupthree(formno varchar(20), account_type varchar(30), card_number varchar(30), pin_number varchar(20), facilities varchar(100));
