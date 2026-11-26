@@ -107,24 +107,60 @@ class LoginPage extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent ae)
     {
         if(ae.getSource() == signin){
+
             mysql c = new mysql();
+
             String cardnumber = cardfield.getText();
             String pinnumber = String.valueOf(pinfield.getPassword());
-            String query = "select * from login where cardNumber = '"+cardnumber+"' and PinNumber = '"+pinnumber+"'";
-            try{
-                ResultSet res = c.s.executeQuery(query);
+
+            String query = "SELECT * FROM login WHERE cardNumber = ? AND PinNumber = ?";
+
+            try {
+                PreparedStatement ps = c.c.prepareStatement(query);
+
+                ps.setString(1, cardnumber);
+                ps.setString(2, pinnumber);
+
+                ResultSet res = ps.executeQuery();
+
                 if(res.next()){
                     setVisible(false);
                     new transaction(pinnumber).setVisible(true);
-                }else{
-                    JOptionPane.showMessageDialog(null, "Incorrect Cardnumber or Pin");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Incorrect Card Number or PIN");
                     cardfield.setText("");
                     pinfield.setText("");
-                }   
-            }catch(Exception e){
+                }
+
+                res.close();
+                ps.close();
+
+            } catch(Exception e) {
                 System.out.println(e);
             }
         }
+
+
+
+//        if(ae.getSource() == signin){
+//            mysql c = new mysql();
+//            String cardnumber = cardfield.getText();
+//            String pinnumber = String.valueOf(pinfield.getPassword());
+//            String query = "select * from login where cardNumber = '"+cardnumber+"' and PinNumber = '"+pinnumber+"'";
+//            try{
+//                ResultSet res = c.s.executeQuery(query);
+//                if(res.next()){
+//                    setVisible(false);
+//                    new transaction(pinnumber).setVisible(true);
+//                }else{
+//                    JOptionPane.showMessageDialog(null, "Incorrect Cardnumber or Pin");
+//                    cardfield.setText("");
+//                    pinfield.setText("");
+//                }
+//            }catch(Exception e){
+//                System.out.println(e);
+//            }
+//        }
         else if(ae.getSource() == clear){
             cardfield.setText("");
             pinfield.setText("");
